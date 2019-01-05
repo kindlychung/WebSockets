@@ -7,9 +7,10 @@ namespace WebSockets
     {
         static void Main()
         {
-            var server = new EchoServer(IPAddress.Loopback, 54321);
+            var server = new EchoServer(IPAddress.Loopback, 8002);
             server.Start();
 
+            Console.WriteLine("Listening on 8002");
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
 
